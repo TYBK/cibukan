@@ -4,11 +4,13 @@
   <title>Cibukan</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Cibukan | A Modern Eco Village Concept">
+  <meta property="og:title" content="A Modern Eco Village Concept">
   <meta property="og:description" content="🌱 🙏 🌊 🥥">
   <meta property="og:image" content="https://cibukan.com/cibukan(desktop).png"> <!-- Specify the URL of the image here -->
   <meta property="og:url" content="https://cibukan.com/">
   <link rel="shortcut icon" type="x-icon" href="https://symbl-world.akamaized.net/i/webp/5f/76969dade2700e02b142efcc97a567.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
   <style>
     * {
@@ -17,7 +19,7 @@
     body {
       margin: 0;
             background: url('cibukan(desktop).png') center/cover no-repeat; /* Set background on the body */
-            background-color: black;
+            background-color: rgb(18, 18, 18);
     }
     #main {
       display: flex;
@@ -42,6 +44,70 @@
       background: transparent;
       height: 20vh;
     }
+
+    ul {
+      position:absolute;
+      top:90%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      margin:0;
+      padding:0;
+      display:flex;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    ul li a {
+      position: relative;
+      width:50px;
+      height:50px;
+      display:block;
+      text-align:center;
+      margin:0 10px;
+      border-radius: 50%;
+      padding: 6px;
+      box-sizing: border-box;
+      text-decoration:none;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+      background: linear-gradient(0deg, #ddd, #fff);
+      transition: .5s;
+    }
+
+    ul li a:hover {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      text-decoration:none;
+    }
+
+    ul li a .fab {
+      width: 100%;
+      height:100%;
+      display:block;
+      background: linear-gradient(0deg, #fff, #ddd);
+      border-radius: 50%;
+      line-height: calc(40px - 0px);
+      font-size:24px;
+      color: #262626;
+      transition: .5s;
+    }
+
+    ul li:nth-child(1) a:hover .fab {
+      color: #3b5998;
+    }
+
+    ul li:nth-child(2) a:hover .fab {
+      color: #00aced;
+    }
+
+    ul li:nth-child(3) a:hover .fab {
+      color: #007bb6;
+    }
+
+    ul li:nth-child(4) a:hover .fab {
+      color: #e4405f;
+    }
+
   </style>
 </head>
 <body>
@@ -51,6 +117,13 @@
     <nav></nav>
     <aside></aside>
   </div>
-  <footer></footer>
+  <footer>
+    <ul>
+      <li><a href="https://www.facebook.com/cibukan"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/cibukan?lang=en"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/cibukan/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+  </footer>
 </body>
 </html>
